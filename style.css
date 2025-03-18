@@ -1,0 +1,211 @@
+/* Reset default styles */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: Arial, sans-serif;
+}
+
+/* Body styles */
+body {
+  color: #fff;
+  text-align: center;
+  overflow-x: hidden;
+  background-color: #000;
+}
+
+/* Navigation Bar */
+nav {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 20px;
+  position: fixed;
+  width: 100%;
+  z-index: 1000;
+}
+
+.nav-links {
+  list-style: none;
+  display: flex;
+  
+}
+
+.nav-links li {
+  margin: 0 15px;
+}
+.nav-links a {
+  color: white;
+  text-decoration: none;
+  font-size: 16px;
+  transition: color 0.3s;
+}
+
+.nav-links a:hover {
+  color: #3b6be1;
+}
+
+/* Icons */
+.icons i {
+  color: white;
+  font-size: 20px;
+  margin-left: 15px;
+}
+
+#modelx {
+  background: url('images/modelx.jpg') no-repeat center center;
+  background-size: cover;
+  height: 100vh;
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  text-align: center;
+  position: relative;
+  overflow: auto;
+}
+#models {
+  background: url('images/models.jpg') no-repeat center center;
+  background-size: cover;
+  height: 100vh;
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  text-align: center;
+  position: relative;
+  overflow: auto;
+
+
+
+
+}
+section {
+  background:url('images/solare.jpg');
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: flex-start;
+  height: 100vh;
+  scroll-snap-align: start;
+  width: 100%;
+  position: relative;
+  text-align: center;
+  padding-top: 15%;
+  background-size: cover;
+  background-position: center;
+}
+html, body {
+  overflow-y: auto;  /* Enables vertical scrolling */
+  height: 100%;
+  scroll-behavior: smooth; /* Smooth scrolling */
+}
+
+
+.car-section {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: flex-start;
+  height: 100vh;
+  scroll-snap-align: start;
+  width: 100%;
+  position: relative;
+  text-align: center;
+  padding-top: 15%;
+  background-size: cover;
+  background-position: center;
+}
+
+/* Model3 Section */
+.Model3{
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: flex-start;
+  height: 100vh;
+  scroll-snap-align: start;
+  width: 100%;
+  position: relative;
+  text-align: center;
+  padding-top: 15%;
+  background-size: cover;
+  background-position: center;
+}
+.Model3 {
+  background: url('images/front-page.jpg') no-repeat center center/cover;
+}
+
+#model-y {
+  background-image: url('images/Model-Y.jpg');
+}
+
+#new-model-y {
+  background-image: url('images/Homepage-Cybertruck-Desktop-v3.avif');
+}
+
+/* Section Titles */
+.car-section h1{
+  font-size: 3rem;
+  font-weight: bold;
+}
+
+.Model3 h1 {
+  font-size: 64px;
+  font-weight: bold;
+  text-align: center;
+
+}
+/* Call-to-Action Buttons Container */
+.cta-buttons {
+  position: absolute;
+  bottom: 50px; /* Distance from bottom */
+  left: 50%;
+  transform: translateX(-50%);
+  display: flex;
+  gap: 25px;
+  justify-content: center;
+}
+
+/* Button Styles */
+.btn {
+  padding: 10px 95px;
+  font-size: 15px;
+  font-weight: 500;
+  border-radius: 5px;
+  cursor: pointer;
+  border: none;
+  transition: all 0.3s ease;
+}
+
+/* Primary Button */
+.primary {
+  
+  background-color: #3b6be1;
+  color: white;
+  position: absolute; 
+  bottom: 20px; 
+  left: 35%; 
+  transform: translateX(-50%);
+}
+
+.primary:hover {
+  background-color: #2a4ea1;
+}
+
+/* Secondary Button */
+.secondary {
+  background-color: white;
+  color: black;
+  border: 2px solid #ccc;
+position: absolute;
+  bottom: 20px; 
+  right: 25%;
+   transform: translateX(-50%);
+}
+
+.secondary:hover {
+  background-color: #f4f4f4;
+}  

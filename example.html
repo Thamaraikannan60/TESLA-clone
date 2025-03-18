@@ -1,0 +1,208 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Tesla Model 3</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+            font-family: Arial, sans-serif;
+        }
+
+        html {
+            scroll-behavior: smooth;
+            scroll-snap-type: y mandatory;
+        }
+
+        body {
+            color: #fff;
+            text-align: center;
+            overflow-x: hidden;
+            background-color: #000;
+        }
+
+.hero h1 {
+    font-size: 3rem;
+    font-weight: bold;
+    margin-bottom: 10px; /* Adds spacing below the title */
+}
+
+        nav {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            padding: 20px;
+            position: fixed;
+            width: 100%;
+            z-index: 1000;
+        }
+
+        .nav-links {
+            list-style: none;
+            display: flex;
+        }
+
+        .nav-links li {
+            margin: 0 15px;
+        }
+
+        .nav-links a {
+            color: white;
+            text-decoration: none;
+            font-size: 16px;
+            transition: color 0.3s;
+        }
+
+        .nav-links a:hover {
+            color: #3b6be1;
+        }
+
+        .icons i {
+            color: white;
+            font-size: 20px;
+            margin-left: 15px;
+        }
+
+        .hero,.car-section {
+            background: url('images/front-page.jpg') no-repeat center center/cover;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            justify-content: flex-start;
+            height: 100vh;
+            scroll-snap-align: start;
+            width: 100%;
+            position: relative;
+            text-align: center;
+            padding-top: 15%;
+            background-size: cover;
+            background-position: center;
+        }
+
+        .hero {
+            background: url('images/front-page.jpg') no-repeat center center/cover;
+        }
+        #model-y{
+            background-image: url('images/Model-Y.jpg');
+        }
+        #new-model-y{
+            background-image: url('images/Homepage-Cybertruck-Desktop-v3.avif');
+        }
+        .car-section h1 {
+            font-size: 3rem;
+            font-weight: bold;
+            margin-top: 100px;
+            text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.7);
+        }
+
+        .cta-buttons {
+            display: flex;
+            gap: 15px;
+            justify-content: center;
+            margin-top: 20px;
+            
+        }
+
+        .btn {
+            padding: 12px 40px;
+            font-size: 16px;
+            font-weight: 600;
+            border-radius: 5px;
+            cursor: pointer;
+            border: none;
+            transition: all 0.3s ease;
+        }
+
+        .primary {
+            background-color: #3b6be1;
+            color: white;
+        }
+
+        .primary:hover {
+            background-color: #2a5ad9;
+        }
+
+        .secondary {
+            background-color: white;
+            color: black;
+            border: 2px solid #ccc;
+        }
+
+        .secondary:hover {
+            background-color: #f4f4f4;
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <nav>
+            <img src="images/logo.png" class="logo" width="120px">
+            <ul class="nav-links">
+                <li><a href="#">Vehicles</a></li>
+                <li><a href="#">Energy</a></li>
+                <li><a href="#">Charging</a></li>
+                <li><a href="#">Discover</a></li>
+                <li><a href="#">Shop</a></li>
+            </ul>
+            <div class="icons">
+                <i class="fas fa-question-circle"></i>
+                <i class="fas fa-globe"></i>
+                <i class="fas fa-user-circle"></i>
+            </div>
+        </nav>
+    </header>
+
+    <section class="hero">
+        <h1>Model 3</h1>
+        <div class="cta-buttons">
+            <a href="#" class="btn primary">Order Now</a>
+            <a href="#" class="btn secondary">Learn More</a>
+        </div>
+    </section>
+    
+    <section class="car-section" id="model-y">
+        <div class="car-content">
+            <h2>Model Y</h2>
+            <p>Starting at $43,990</p>
+            <button class="btn primary">Order Now</button>
+            <button class="btn secondary">Learn More</button>
+        </div>
+    </section>
+
+    <section class="car-section" id="new-model-y">
+        <div class="car-content">
+            <h3>New Model Y</h3>
+            <p>$7,500 Federal Tax Credit at Purchase</p>
+            <button class="btn primary">Order Now</button>
+            <button class="btn secondary">Learn More</button>
+        </div>
+    </section>
+
+    <script>
+        document.addEventListener("wheel", (event) => {
+            if (event.deltaY > 0) {
+                window.scrollBy({ top: window.innerHeight, behavior: "smooth" });
+            } else {
+                window.scrollBy({ top: -window.innerHeight, behavior: "smooth" });
+            }
+        });
+    </script>
+</body>
+</html>
+
+
+
+document.addEventListener("wheel", (event) => {
+  if (event.deltaY > 0) {
+      window.scrollBy({ top: window.innerHeight, behavior: "smooth" });
+  } else {
+      window.scrollBy({ top: -window.innerHeight, behavior: "smooth" });
+  }
+});
+
+
